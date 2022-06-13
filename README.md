@@ -20,6 +20,6 @@ First, please make sure the required python packages are installed in your 3D Sl
 First, before starting doing segmentation, please make sure required python packages are installed by following the above instructions. Second, go to **Module** --> **Segmentations** and create a SegmentationNode and a sub-segment. You should name the sub-segment as "Liver". The structure should look like this: ![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/segmentations.png)
 
 For the input volume, user can load any abdomen/chest CT scan. User can also choose to play with our extension using our provided sample data `LiTS-Liver-Segmentation-0` under section **Download Sample Data** and label **Liver Segmentation**. The built-in sample data `CTChest` also works. After set the input volume node and output segmentation node, user could click the `Apply` button to start the inference, the process could take several minutes to 10 minutes depends on the size of the input CT scan. After the inference is done, user could freely edit the output segmentation by using the module `Segmentation Editor`. The output should look like the following:
-![alt text]()
+![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/output.png)
 
 
