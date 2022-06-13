@@ -27,11 +27,11 @@ class LiverSegmentation(ScriptedLoadableModule):
     self.parent.contributors = ["Ling Feng (DFCI)"]  # TODO: replace with "Firstname Lastname (Organization)"
     # TODO: update with short description of the module and a link to online module documentation
     self.parent.helpText = """
-This is an example of a simple extension.
+Automatic Liver Segmentation by Deep Learning.
 """
     # TODO: replace with organization, grant and thanks
     self.parent.acknowledgementText = """
-This file was originally developed by Ling Feng and Alexandra Chowdhury at Dana Farber Cancer Institute, and was partially funded by ......
+This file was originally developed by Ling Feng at Dana Farber Cancer Institute, Department of Artificial Intelligence and Data Science, under the supervision of Alexander Chowdhury.
 """
 
     # Additional initialization step after application startup is complete
