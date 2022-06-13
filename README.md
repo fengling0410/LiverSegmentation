@@ -1,5 +1,7 @@
 # 3D Slicer Liver Segmentation Extension
-This is the repository for 3D slicer extension Liver Segmentation Module developed by Ling Feng at Dana Farber Cancer Institute. This extension is still under development and has not been distributed yet. To make use of the extension, please follow the instructions below. We welcome and appreciate any suggestions from the community.
+This is the repository for 3D slicer extension Liver Segmentation Module developed by Ling Feng at Dana Farber Cancer Institute. The inference model has a structure of UNETR and is trained using self-supervised learning. The pre-trained weights are trained on 2500 **TCIA** abdomen CT scans, and the model is fine-tuned on **LiTS** liver segmentation dataset which contains 130 annotated CT scan.
+
+This extension is still under development and has not been distributed yet. To make use of the extension, please follow the instructions below. We welcome and appreciate any suggestions from the community.
 
 ### Download our Extension and Load it into 3D Slicer
 You may download out extension through github directly. In order to load the extension into 3D Slicer and use it for liver segmentation task, you can go through **Module Finder** --> **Extension Wizard** --> **Select Extension** --> **choose the folder contains the extension** --> **Open**. After loading the module, you can use it by go through **Module** --> **Segmentation** --> **LiverSegmentation**. The user-interface will look like the following: ![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/user_interface.png)
@@ -17,6 +19,7 @@ First, please make sure the required python packages are installed in your 3D Sl
 ### Start Liver Segmentation
 First, before starting doing segmentation, please make sure required python packages are installed by following the above instructions. Second, go to **Module** --> **Segmentations** and create a SegmentationNode and a sub-segment. You should name the sub-segment as "Liver". The structure should look like this: ![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/segmentations.png)
 
-For the input volume, user can load any abdomen/chest CT scan. User can also choose to play with our extension using our provided sample data `LiTS-Liver-Segmentation-0` under section **Download Sample Data** and label **Liver Segmentation**. The built-in sample data `CTChest` also works. 
+For the input volume, user can load any abdomen/chest CT scan. User can also choose to play with our extension using our provided sample data `LiTS-Liver-Segmentation-0` under section **Download Sample Data** and label **Liver Segmentation**. The built-in sample data `CTChest` also works. After set the input volume node and output segmentation node, user could click the `Apply` button to start the inference, the process could take several minutes to 10 minutes depends on the size of the input CT scan. After the inference is done, user could freely edit the output segmentation by using the module `Segmentation Editor`. The output should look like the following:
+![alt text]()
 
 
