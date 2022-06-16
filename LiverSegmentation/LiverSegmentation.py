@@ -351,7 +351,7 @@ class LiverSegmentationWidget(ScriptedLoadableModuleWidget, VTKObservationMixin)
     else:
       print("Start loading required dependencies")
       progressDialog = slicer.util.createProgressDialog(maximum=0)
-      for dep in ["monai", "torch", "einops", "nibabel","scikit-image"]: #"einops", "itk","nibabel"
+      for dep in ["monai==0.8.1", "torch", "einops", "nibabel","scikit-image"]: #"einops", "itk","nibabel"
         progressDialog.labelText = "Installing " + dep
         slicer.util.pip_install(dep)
       check_again = self.check_dependency()
