@@ -4,7 +4,9 @@ This is the repository for 3D slicer extension Liver Segmentation Module develop
 This extension is still under development and has not been distributed yet. To make use of the extension, please follow the instructions below. We welcome and appreciate any suggestions from the community.
 
 ### Download our Extension and Load it into 3D Slicer
-You may download out extension through github directly. In order to load the extension into 3D Slicer and use it for liver segmentation task, you can go through **Module Finder** --> **Extension Wizard** --> **Select Extension** --> **choose the folder contains the extension** --> **Open**. After loading the module, you can use it by go through **Module** --> **Segmentation** --> **LiverSegmentation**. The user-interface will look like the following: ![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/user_interface.png)
+You may download our extension through github directly. The model is still being trained to increase segmentation accuracy, but a sample model is released for interested user to play with. In order to try our extension, user should download the sample model from the recent release and put it under the **LiverSegmentation** folder (the same folder as the `.py` file).
+
+In order to load the extension into 3D Slicer and use it for liver segmentation task, you can go through **Module Finder** --> **Extension Wizard** --> **Select Extension** --> **choose the folder contains the extension** --> **Open**. After loading the module, you can use it by go through **Module** --> **Segmentation** --> **LiverSegmentation**. The user-interface will look like the following: ![alt text](https://github.com/fengling0410/LiverSegmentation/blob/main/Images/user_interface.png)
 
 The parameters on the user-interface means:
 - `Input Volume`: The CT Scan you want to segment.
