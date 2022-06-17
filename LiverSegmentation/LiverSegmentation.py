@@ -64,7 +64,7 @@ def registerSampleData():
     # It can be created by Screen Capture module, "Capture all views" option enabled, "Number of images" set to "Single".
     thumbnailFileName=os.path.join(iconsPath, 'LiTS_Liver.png'),
     # Download URL and target file name
-    uris="https://github.com/fengling0410/LiverSegmentation/releases/download/LiverSegmentation/LITS-Liver-Segmentation-0.nii",
+    uris="https://github.com/fengling0410/LiverSegmentation/releases/download/LiverSegmentationTest/LiTS-Liver.nii",
     fileNames='LITS-Liver-Segmentation-0.nii',
     # Checksum to ensure file integrity. Can be computed by this command:
     #  import hashlib; print(hashlib.sha256(open(filename, "rb").read()).hexdigest())
